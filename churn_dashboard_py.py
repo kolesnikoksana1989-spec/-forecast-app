@@ -24,7 +24,7 @@ uploaded_file = st.file_uploader("📂 Загрузите CSV с данными 
 
 with tab1:
     if uploaded_file:
-    df = pd.read_csv(uploaded_file)
+        df = pd.read_csv(uploaded_file)
 
     # Проверяем наличие нужных колонок
     if "Вероятность_оттока" not in df.columns:
